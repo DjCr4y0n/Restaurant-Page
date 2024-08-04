@@ -1,1 +1,4 @@
-console.log("WASSUP HOMIE")
+import { homePage } from "../js-module/home";
+
+homePage();
+
