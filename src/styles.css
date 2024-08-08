@@ -117,3 +117,33 @@ button
 {
     background-color: greenyellow;
 }
+
+#menu
+{
+    background: url('./leaves.jpg') no-repeat;
+    background-size: cover;
+}
+
+.menu
+{
+   display: flex;
+   flex: 1;
+   flex-direction: column;
+}
+
+.menu h1
+{
+    font-family: 'african';
+    color: rgb(58, 2, 2);
+    font-size: 90px;
+    margin: 0;
+    text-align: center;
+}
+
+.dishes
+{
+    display: grid;
+    grid-template: 25px 25px / 25px 25px;
+    gap: 40px;
+    justify-content: center;
+}
