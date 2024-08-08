@@ -14,7 +14,7 @@ export function contactPage()
     const locationHeadline = document.createElement('h2');
     locationHeadline.textContent = "Where we at?"
     const location = document.createElement('p');
-    location.textContent = "Miejska Dżungla 69 \n 05-400 Otwock";
+    location.innerHTML = "Miejska Dżungla 69<br>05-400 Otwock";
     locationContainer.appendChild(locationHeadline);
     locationContainer.appendChild(location);
 
@@ -28,7 +28,7 @@ export function contactPage()
     const hoursHeadline = document.createElement('h2');
     hoursHeadline.textContent = "Opening hours";
     const hours = document.createElement('p');
-    hours.textContent = "Monday: 12:00-21:00 \n Saturday 08:00-22:00";
+    hours.innerHTML = "Monday: 12:00-21:00<br>Tuesday: 12:00-21:00<br>Wensday: 12:00-21:00<br>Thursday: 12:00-21:00<br>Friday: 12:00-21:00<br>Saturday 08:00-22:00";
 
     hoursContainer.appendChild(hoursHeadline);
     hoursContainer.appendChild(hours);

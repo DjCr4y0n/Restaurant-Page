@@ -1,10 +1,12 @@
 export function menuPage()
 {
     const content = document.getElementById('content');
-    const menuPage = document.createElement('div');
-
+    
     const menuHeadline = document.createElement('h1');
-    menuPage.appendChild(menuHeadline);
+    menuHeadline.textContent = "Our Menu:";
+    content.appendChild(menuHeadline);
+
+    const menuPage = document.createElement('div');
 
     const numberOfDishes = 8;
     for (let index = 0; index < numberOfDishes; index++) {

@@ -1,6 +1,7 @@
 import { homePage } from "../js-module/home";
 import { contactPage } from "../js-module/contact";
 import { menuPage } from "../js-module/menu";
+import './styles.css'
 
 document.addEventListener("DOMContentLoaded", () => {
     homePage();
@@ -31,4 +32,18 @@ document.addEventListener("DOMContentLoaded", () => {
             document.body.id = "menu";
             menuPage();
     });
+});
+
+const btns = document.querySelectorAll("button");
+
+btns.forEach(b => {
+        b.addEventListener("mouseover", (e) =>
+        {
+                e.target.style.color = "orange";               
+        });
+
+        b.addEventListener("mouseleave", (e) =>
+        {
+                e.target.style.color = "";               
+        });
 });
