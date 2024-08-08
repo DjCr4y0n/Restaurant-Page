@@ -2,10 +2,14 @@ export function contactPage()
 {
     const content = document.getElementById('content');
     const contactPage = document.createElement('div');
+    contactPage.classList.add("contact");
 
     const locationContainer = document.createElement('div');
+    locationContainer.classList.add("first");
     const contactContainer = document.createElement('div');
+    contactContainer.classList.add("second");
     const hoursContainer = document.createElement('div');
+    hoursContainer.classList.add("third");
 
     contactPage.appendChild(locationContainer);
     contactPage.appendChild(contactContainer);
@@ -14,7 +18,7 @@ export function contactPage()
     const locationHeadline = document.createElement('h2');
     locationHeadline.textContent = "Where we at?"
     const location = document.createElement('p');
-    location.innerHTML = "Miejska Dżungla 69<br>05-400 Otwock";
+    location.innerHTML = "Miejska Dzungla 69<br>05-400 Otwock";
     locationContainer.appendChild(locationHeadline);
     locationContainer.appendChild(location);
 

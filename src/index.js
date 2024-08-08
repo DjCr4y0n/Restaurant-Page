@@ -3,7 +3,10 @@ import { contactPage } from "../js-module/contact";
 import { menuPage } from "../js-module/menu";
 import './styles.css'
 
+    
+
 document.addEventListener("DOMContentLoaded", () => {
+    document.body.id = 'home';
     homePage();
 
     const contentDiv = document.getElementById('content'); 

@@ -13,6 +13,12 @@ html{
     height: 100%;
 }
 
+body
+{
+    margin: 0;
+    height: 100%;
+}
+
 nav
 {
     height: 60px;
@@ -29,9 +35,7 @@ button
     border: none;
 }
 
-body{
-    margin: 0;
-    height: 100%;
+#home{
     background: url('./mexican-food.jpg') no-repeat;
     background-size: cover;
 }
@@ -63,4 +67,53 @@ body{
     font-family: 'africanText';
     font-size: 60px;
     color: rgb(114, 8, 8);
+}
+
+.contact
+{
+   display: flex;
+   flex: 1;
+   flex-direction: column;
+   justify-content: space-evenly;
+
+}
+
+.contact div 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact h2
+{
+    text-align: center;
+    font-family: 'africanText';
+    font-size: 40px;
+}
+
+.contact p
+{
+    text-align: center;
+    font-family: 'african';
+    color: rgb(58, 2, 2);
+}
+
+#contact
+{
+    background: url("./mexican-food.jpg") no-repeat;
+    background-size: cover;
+}
+
+.contact .first
+{
+    background-color: red;
+}
+
+.contact .second
+{
+    background-color: gold
+}
+.contact .third
+{
+    background-color: greenyellow;
 }
